@@ -2,11 +2,11 @@
     position: sticky;
     top: 0;
     display: flex;
-    background-color: whitesmoke;
+    background-color: white;
     justify-content: space-evenly;
     border-bottom: 0.1px solid lightgray;
-    padding-top:10px;
-    padding-bottom: 10px;
+    padding-top:8px;
+    padding-bottom: 8px;
     width: 100%;
     z-index: 999;
 
@@ -30,6 +30,10 @@
     height: 22px;
     color: gray;
     background-color: #eef3f8;
+}
+.header__search > input {
+    width: 280px;
+    height: 34px;
 }
 
 .header__search > input {

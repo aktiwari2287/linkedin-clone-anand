@@ -12,7 +12,7 @@ function Sidebar() {
     return <div className="sidebar">
             <div className="sidebar__top">
                 <img src="https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""/>
-                <Avatar className="sidebar__avatar"></Avatar>
+                <Avatar className="sidebar__avatar" src="https://avatars.githubusercontent.com/u/7508506?v=4"></Avatar>
                 <h2>Anand kumar tiwari</h2>
                 <h4>anankti22@gmail.com</h4>
             </div>
