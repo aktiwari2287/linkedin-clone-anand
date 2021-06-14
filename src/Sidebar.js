@@ -14,7 +14,9 @@ function Sidebar() {
     return <div className="sidebar">
             <div className="sidebar__top">
                 <img src="https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""/>
-                <Avatar className="sidebar__avatar" src={user.photoURL}></Avatar>
+                <Avatar className="sidebar__avatar" src={user.photoURL}>
+                   <span style={{fontSize:'50px',color:'navy'}}>{user.email[0].toUpperCase()}</span> 
+                </Avatar>
                 <h2>{user.displayName}</h2>
                 <h4>{user.email}</h4>
             </div>
