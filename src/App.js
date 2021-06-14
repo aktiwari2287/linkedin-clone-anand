@@ -12,22 +12,22 @@ function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
   
-  // useEffect(() => {
-  //   auth.onAuthStateChanged( (userAuth) => {
-  //     console.log("on auth", userAuth)
-  //     if(userAuth) {
-  //       dispatch(login({
-  //         email: userAuth.email,
-  //         uid: userAuth.uid,
-  //         displayName: userAuth.displayName,
-  //         photoURL: userAuth.photoURL
-  //       }))
-  //     } else {
-  //       console.log("Inside else block");
-  //       dispatch(logout());
-  //     }
-  //   })
-  // },[]);
+  useEffect(() => {
+    auth.onAuthStateChanged( (userAuth) => {
+      console.log("on auth", userAuth)
+      if(userAuth) {
+        dispatch(login({
+          email: userAuth.email,
+          uid: userAuth.uid,
+          displayName: userAuth.displayName,
+          photoURL: userAuth.photoURL
+        }))
+      } else {
+        console.log("Inside else block");
+        dispatch(logout());
+      }
+    })
+  },[]);
   return (
     <div className="app">
         <Header></Header>
