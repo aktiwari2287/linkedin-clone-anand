@@ -10,7 +10,7 @@ import firebase from 'firebase';
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
-import FlipMove from 'react-flip-move'
+import FlipMove from 'react-flip-move';
 function Feed() {
     const user = useSelector(selectUser);
     const [input, setInput] = useState('');
