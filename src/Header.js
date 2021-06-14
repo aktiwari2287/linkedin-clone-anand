@@ -13,13 +13,13 @@ import { auth } from './firebase';
 function Header() {
     const dispatch = useDispatch();
     const logoutOfApp = () => {
-        //dispatch(logout());
+       // dispatch(logout());
         //auth.signOut();
     }
     return (
         <div className="header">
             <div className="header__left">
-                <img src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1623332815~hmac=1fe72c8745cf818e843b8863b2c7df3b" alt=""/>
+                <img src="" alt="Linked IN"/>
                 <div className="header__search">
                     <SearchIcon></SearchIcon>
                     <input type="text" name="" id="" placeholder="Search"/>

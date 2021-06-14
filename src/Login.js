@@ -19,7 +19,7 @@ function Login() {
                 userAuth.user.updateProfile({
                     displayName: name,
                     photoURL: profilePic
-                }).then( ()=> {
+                }).then( () => {
                     dispatch(login ({
                         email: userAuth.user.email,
                         uid: userAuth.user.uid,
@@ -30,6 +30,7 @@ function Login() {
             }).catch((error) => console.log(error));
     }
     const loginToApp = (e) => {
+        /*
         e.preventDefault();
         auth.signInWithEmailAndPassword(email, password)
             .then(userAuth => {
@@ -40,6 +41,7 @@ function Login() {
                     profileURL: userAuth.user.photoURL
                 }))
             }).catch(error => console.log(error))
+            */
     }
     return (
         <div className="login">
